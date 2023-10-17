@@ -1,0 +1,39 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/labofinal
+        username: postgres
+        password: postgres
+        driver-class-name: org.postgresql.Driver
+    mail:
+        host: smtp-mail.outlook.com
+        port: 587
+        username: adoptadev-no-reply@outlook.com
+        password: ZircaCorp1234=
+        properties:
+            mail:
+                protocol: smtp
+                tls:
+                    true
+                smtp:
+                    auth: true
+                    starttls:
+                        enable:
+                            true
+                    ssl:
+                        trust:
+                            smtp-mail.outlook.com:
+
+    jpa:
+        show-sql: true
+        hibernate:
+            ddl-auto: create
+        properties:
+            hibernate:
+                format_sql: true
+
+springdoc:
+    swagger-ui:
+        path: /swagger
+file:
+    path: uploads
+
